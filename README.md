@@ -1,6 +1,6 @@
 # HomeLab-VLAN-Refactor-Security
 
-*Approche "Sécurité & Migration"
+*Approche "Sécurité & Migration"*
 
 ---
 
