@@ -147,19 +147,19 @@ end
 flowchart LR
     subgraph Backup["🔄 Sauvegarde nocturne"]
         TrueNAS -->|Rsync 10Gb/s 02:00| QNAP
-        QNAP -->|Shutdown auto| Done[✅ Terminé]
+        QNAP -->|Shutdown auto| Done["✅ Terminé"]
     end
 
     subgraph DHCP["🌐 Attribution DHCP"]
-        WS -->|Scope VLAN10| Admin[10.20.10.100-200]
-        WS -->|Scope VLAN50| PC[10.20.50.100-200]
-        WS -->|Scope VLAN100| IoT[10.20.100.100-200]
+        WS -->|Scope VLAN10| Admin["10.20.10.100-200"]
+        WS -->|Scope VLAN50| PC["10.20.50.100-200"]
+        WS -->|Scope VLAN100| IoT["10.20.100.100-200"]
     end
 
     subgraph WiFi["📡 Attribution WiFi"]
-        Client -->|PPSK "Admin123"| VLAN10
-        Client -->|PPSK "Guest456"| VLAN50
-        Client -->|PPSK "IoT789"| VLAN100
+        Client -->|"PPSK Admin123"| VLAN10
+        Client -->|"PPSK Guest456"| VLAN50
+        Client -->|"PPSK IoT789"| VLAN100
     end
 ```
 
